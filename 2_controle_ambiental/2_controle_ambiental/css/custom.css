@@ -1,0 +1,105 @@
+@font-face {
+    font-family: source-light;
+    src: url("../fonts/SourceSerifPro-Light.ttf");
+}
+@font-face {
+    font-family: source-regular;
+    src: url("../fonts/SourceSansPro-Regular.ttf");
+}
+@font-face {
+    font-family: source-bold;
+    src: url("../fonts/SourceSansPro-Bold.ttf");
+}
+body{
+    background: url('../imgs/bg.jpg') no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow-x: hidden;
+}
+h2{font-size: 30px;}
+h3{font-size: 24px;}
+h4{font-size: 20px;}
+p, li, a, td{
+    font-family: source-regular;
+    font-size: 16px;
+}
+h2, h3, h4{font-family: source-bold;}
+.citacao p{
+    font-size: 15px;
+    margin: 0;
+}
+.clique{
+    text-align: center;
+}
+.painel{
+    background: url('../imgs/painel_BG.png') no-repeat;
+    width: 281px;
+    height: 260px;
+    margin: 40px auto;
+    position: relative;
+}
+.painel button{
+    border: none;
+    width: 120px;
+    height: 120px;
+    position: absolute;
+}
+.bt-plan{
+    background: url('../imgs/botao_plan.png');
+    top: -45px;
+    left: 85px;
+}
+.bt-plan:hover{background: url('../imgs/botao_plan_hover.png');}
+.bt-do{
+    background: url('../imgs/botao_do.png');
+    right: -45px;
+    top: 75px;
+}
+.bt-do:hover{background: url('../imgs/botao_do_hover.png');}
+.bt-check{
+    background: url('../imgs/botao_check.png');
+    bottom: -45px;
+    left: 80px;
+}
+.bt-check:hover{background: url('../imgs/botao_check_hover.png');}
+.bt-act{
+    background: url('../imgs/botao_act.png');
+    left: -45px;
+    top: 75px;
+}
+.bt-act:hover{background: url('../imgs/botao_act_hover.png');}
+.grupo-imprimir {margin-top: 20px}
+.fundo-tecnicos{
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 80px;
+}
+.bloco.azul{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background: #056874;
+    padding-left: 0;
+}
+.bloco.azul *{color: #fff;}
+.panel-default{
+    border: none !important;
+    border-radius: 0;
+}
+.panel-heading {
+    background-color: #CD6D64 !important;
+    color: #fff !important;
+    border: none !important;
+    border-radius: 0;
+}
+.panel-heading:hover, .panel-heading:active, .panel-heading:focus, .panel-heading.ativo{
+    background-color: #FF9E90 !important;
+    color: #000 !important;
+}
+.panel-heading a{
+    font-family: source-bold;
+    font-size: 20px;
+}
+.panel-collapse{
+    background: #EFF7E0;
+    padding: 0 30px;
+}

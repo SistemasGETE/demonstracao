@@ -1,0 +1,64 @@
+/*modal-100*/
+
+/*modais 100%*/
+.modal-100{
+   background-color: white;
+   padding-top: 50px;
+}
+.modal-100 p {
+    text-align: left;
+}
+
+.modal-100 .modal-dialog{
+  width: 100%;
+   max-width: 1100px;
+   box-shadow: none !important;
+   margin: 40px auto
+}
+.modal-100 .modal-content{
+   box-shadow: none !important;
+   border:0
+}
+.modal-100 .modal-header{
+   border-bottom: 0;
+   padding-bottom: 0
+}
+
+.modal-100 .modal-header .close{
+   opacity: 0.7;
+   background-color: transparent;
+   width:30px;
+   height: 30px;
+   display: block;
+   position: relative;
+   z-index: 10000;
+
+}
+
+.modal-100 .modal-header .close:hover{
+   opacity: 1;
+}
+
+.modal-100 h4.modal-title{
+   font-size: 1.6em;
+   line-height: 2.5;
+   position: relative;
+   z-index: 1;
+
+}
+.modal-100 h4.modal-title::before{
+   position: absolute;
+   left: -45px;
+   top: -20px;
+   width: 60px;
+   height: 60px;
+   background-image: url(../assets/modal-06.png);
+   background-size: contain;
+   content: "";
+
+}
+
+.modal-100 .modal-footer{
+   border-top: 0;
+   text-align: center;
+}

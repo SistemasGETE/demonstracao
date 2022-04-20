@@ -1,0 +1,995 @@
+.infografico {
+    background-color: #aab3c1;
+    padding: 100px 50px 50px 50px;
+    margin: 100px auto 50px auto;
+    position: relative;
+}
+.infografico::before {
+    background-image: url(../images/elemento_infografico.png);
+    width: 190px;
+    height: 190px;
+    content: "";
+    position: absolute;
+    left: 50%;
+    margin: -190px 0 0 -95px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#lista-ordenada {
+    list-style: none;
+    counter-reset: li;
+}
+#lista-ordenada li::before {
+    content: counter(li);
+    color:#2979af;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    font-weight: bold;
+}
+#lista-ordenada li {
+    counter-increment: li
+}
+.azul {
+    color: rgb(95, 150, 215);
+    font-weight: bold;
+}
+.igs {
+    display: block;
+    position: relative;
+    height: 600px;
+}
+.ig-01 {
+    background-image: url(../images/ig-01.png);
+    width: 190px;
+    height: 232px;
+    background-color: transparent;
+    border: none;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 100px;
+    transition: 100ms ease-in;
+}
+.ig-01:hover {
+    background-image: url(../images/ig-01hover.png);
+    width: 190px;
+    height: 232px;
+    background-color: transparent;
+    border: none;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 0;
+    margin: 0;
+    transform: scale(1.05);
+   
+}
+.ig-02 {
+    background-image: url(../images/ig-02.png);
+    width: 230px;
+    height: 191px;
+    background-color: transparent;
+    border: none;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 162px;
+    top: 108px;
+    transition: 100ms ease-in;
+}
+.ig-02:hover {
+    background-image: url(../images/ig-02hover.png);
+    width: 230px;
+    height: 191px;
+    background-color: transparent;
+    border: none;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 0;
+    margin: 0;
+    transform: scale(1.05);
+   
+}
+.ig-03 {
+    background-image: url(../images/ig-03.png);
+    width: 239px;
+    height: 191px;
+    background-color: transparent;
+    border: none;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 156px;
+    top: 301px;
+    transition: 100ms ease-in;
+}
+.ig-03:hover {
+    background-image: url(../images/ig-03hover.png);
+    width: 239px;
+    height: 191px;
+    background-color: transparent;
+    border: none;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 0;
+    margin: 0;
+    transform: scale(1.05);
+   
+}
+.ig-04 {
+    background-image: url(../images/ig-04.png);
+    width: 191px;
+    height: 236px;
+    background-color: transparent;
+    border: none;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 268px;
+    top: 365px;
+    transition: 100ms ease-in;
+}
+.ig-04:hover {
+    background-image: url(../images/ig-04hover_1.png);
+    width: 191px;
+    height: 236px;
+    background-color: transparent;
+    border: none;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 0;
+    margin: 0;
+    transform: scale(1.05);
+   
+}
+.ig-05 {
+    background-image: url(../images/ig-05.png);
+    width: 191px;
+    height: 228px;
+    background-color: transparent;
+    border: none;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 461px;
+    top: 365px;
+    transition: 100ms ease-in;
+}
+.ig-05:hover {
+    background-image: url(../images/ig-05hover.png);
+    width: 191px;
+    height: 228px;
+    background-color: transparent;
+    border: none;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 0;
+    margin: 0;
+    transform: scale(1.05);
+   
+}
+.titulo-h1 {
+    font-family: 'fira_codelight';
+    font-size: 19px;
+    text-transform: uppercase;
+    letter-spacing: normal;
+}
+.progress-container {
+    width: 100%;
+    height: 8px;
+    background: #ccc;
+    position: absolute;
+    bottom: 0;
+  }
+  
+  .progress-bar {
+    height: 8px;
+    background: #FFB117;
+    width: 0%;
+  }
+.menu-topo {
+    height: 100px;
+    background-color: #2d2d2d;
+    margin-bottom: 30px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    padding-top: 30px;
+
+}
+.menu-topo-ul {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+.menu-topo-ul li {
+    list-style: none;
+    display: inline-block;
+}
+.menu-topo-ul li a {
+    color: white;
+    border: 2px solid white;
+    border-radius: 2px;
+    padding: 0 10px;
+    font-size: 26px;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: fira_codelight;
+    
+}
+.menu-topo-ul li a:hover {
+    color: #FFB117;
+    border-color: #FFB117;
+}
+.btoMenu.active {
+    color: #FFB117;
+    border-color: #FFB117;
+}
+.ident-right {
+    padding-right: 50%;
+    position: relative;
+}
+.ident-right::before {
+    position: absolute;
+    right: -200px;
+    width: 618px;
+    height: 569px;
+    content: "";
+    background-image: url(../images/imagem_2.png);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.borda {
+    border: 3px solid #779dc6;
+    padding: 20px 30px;
+}
+.personagem {
+    margin-top: 50px;
+}
+.imagem-001 {
+    margin-top: 150px;
+}
+.img-center {
+	display: block;
+	margin: 50px auto 50px auto;
+	max-width: 50%;
+}
+.img-center-60 {
+	display: block;
+	margin: 50px auto 50px auto;
+	max-width: 60%;
+}
+.img-center-70 {
+	display: block;
+	margin: 50px auto 50px auto;
+	max-width: 70%;
+}
+.img-center-80 {
+	display: block;
+	margin: 50px auto 50px auto;
+	max-width: 80%;
+}
+.img-center-90 {
+	display: block;
+	margin: 50px auto 50px auto;
+	max-width: 90%;
+}
+.img-center-100 {
+	display: block;
+	margin: 50px auto 50px auto;
+	max-width: 100%;
+}
+
+header.senac{
+	background-color:#313131;
+}
+.header-tecnicos{
+    background-image: url(../images/bg-topo.jpg);
+}
+.grupo-imprimir button.bto-imprimir {
+    background-color:rgb(95, 150, 215);
+}
+.legenda-img {
+	font-size: 12px !important;
+	text-align: center !important;
+	text-align: justify;
+}
+
+.bg-fundo {
+    background-image: url(../images/background.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+
+}
+.bg-fundo-02 {
+    background-image: url(../images/background_integrando.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+
+}
+.bg-fundo-03 {
+    background-image: url(../images/background_aplicacoes.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+
+}
+.conteudo {
+    background-color: #fff;
+}
+.parallax-window {
+    background-image: url("../images/parallax-bg1.svg");
+    height: 50vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+  .fundo-tecnicos-topo {
+	background-position:0;
+	background-repeat:repeat-y;
+	padding: 100px 0 70px 0;
+}
+.fundo-tecnicos-topo-02 {
+	background-position:0;
+	background-repeat:repeat-y;
+    padding: 80px 0 70px 0;
+    background-color: white;
+}
+.container {
+    max-width: 1200px;
+}
+.fundo-tecnicos-conteudo {
+	background-position:0;
+	background-repeat:repeat-y;
+	padding-left:60px;
+	padding-right:60px;
+	background-color:#fff;	
+	margin-bottom:5em;
+	padding-top:40px;
+	padding-bottom:70px;
+}
+.destaque {
+    padding-left: 130px;
+    position: relative;
+    color: rgb(95, 150, 215);
+    font-weight: bold;
+}
+.destaque::before {
+    position: absolute;
+    left: -35px;
+    top: 50%;
+    margin-top: -42px;
+    width: 146px;
+    height: 86px;
+    content: "";
+	background-size: contain;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+.destaque-02 {
+    padding-left: 100px;
+    position: relative;
+    color: rgb(95, 150, 215);
+    font-weight: bold;
+}
+.destaque-02::before {
+    position: absolute;
+    left: -35px;
+    top: 50%;
+    margin-top: -42px;
+    width: 146px;
+    height: 86px;
+    content: "";
+	background-size: contain;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+.destaque-02.importante::before {
+    background-image: url(../images/icone_importante.png);
+}
+.destaque-02.fundamental::before {
+    background-image: url(../images/fundamental.png);
+}
+.destaque-02.pensamento::before {
+    background-image: url(../images/icone.png);
+}
+.destaque-02.dica::before {
+    background-image: url(../images/dica.png);
+}
+.destaque-02.lupa::before {
+    background-image: url(../images/pesquisar.png);
+}
+.destaque-02.anote::before {
+    background-image: url(../images/anote.png);
+}
+.destaque-02.interrogacao::before {
+    background-image: url(../images/interrogacao.png);
+}
+.destaque.nota::before {
+    background-image: url(../images/icone-nota.png);
+}
+.destaque.dica::before {
+    background-image: url(../images/icone-dica.png);
+}
+.ident-left01 {
+    position: relative;
+    padding-left: 25%;
+    padding-top: 20px;
+}
+.ident-left01::before {
+    position: absolute;
+    left: -40px;
+    width: 30%;
+    height: 200px;
+    content: "";
+    background-image: url(../images/nuget.png);
+    max-width: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.citacao {
+    padding-left: 100px;
+    font-size: 16px
+}
+.btn-voltar-topo {
+    background-image: url(../images/voltaraotopo.png);
+    width: 204px;
+    height: 92px;
+    background-color: transparent;
+    border: none;
+    margin-bottom: 50px;
+    display: block;
+    margin: 10px auto;
+}
+.btn-voltar-topo:hover {
+    background-image: url(../images/voltaraotopo_hover.png);
+    width: 204px;
+    height: 92px;
+    background-color: transparent;
+    border: none;
+}
+.btns {
+    display: flex;
+    justify-content: space-around;
+}
+.btn-01 {
+    background-image: url(../images/integrando.png);
+    width: 100%;
+    height: 229px;
+    background-color: transparent;
+    border: none;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 17%;
+    transition: 100ms ease-in;
+}
+.btn-01:hover {
+    background-image: url(../images/integrando_hover.png);
+    width: 100%;
+    height: 267px;
+    background-color: transparent;
+    border: none;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 0;
+    margin: -20px 0 0 -20px;
+   
+}
+.btn-02 {
+    background-image: url(../images/aplicacoes.png);
+    width: 100%;
+    height: 229px;
+    background-color: transparent;
+    border: none;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 43%;
+    margin-top: 120px;
+    transition: 100ms ease-in;
+}
+.btn-02:hover {
+    background-image: url(../images/aplicacoes_hover.png);
+    width: 100%;
+    height: 267px;
+    background-color: transparent;
+    border: none;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.btn-03 {
+    background-image: url(../images/btn-03.png);
+    width: 100%;
+    height: 91px;
+    background-color: transparent;
+    border: none;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    margin: 50px 0;
+}
+.btn-03:hover {
+    background-image: url(../images/btn-03hover.png);
+    width: 100%;
+    height: 91px;
+    background-color: transparent;
+    border: none;
+    transform: scale(0.95);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+.btn-04 {
+    background-image: url(../images/btn-04.png);
+    width: 100%;
+    height: 91px;
+    background-color: transparent;
+    border: none;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    margin: 50px 0;
+}
+.btn-04:hover {
+    background-image: url(../images/btn-04hover.png);
+    width: 100%;
+    height: 91px;
+    background-color: transparent;
+    border: none;
+    transform: scale(0.95);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+.btn-05 {
+    background-image: url(../images/bt_problema.png);
+    max-width: 100%;
+    width: 223px;
+    height: 223px;
+    left: 50%;
+    margin-left: -116px;
+    position: relative;
+    background-color: transparent;
+    border: none;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+.btn-05:hover {
+    background-image: url(../images/bt_problema_hover.png);
+    width: 223px;
+    height: 223px;
+    background-color: transparent;
+    border: none;
+    transform: scale(0.95);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+.btn-06 {
+    background-image: url(../images/bt_revisao.png);
+    max-width: 100%;
+    width: 191px;
+    height: 179px;
+    left: 50%;
+    margin-left: -95px;
+    position: relative;
+    background-color: transparent;
+    border: none;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+.btn-06:hover {
+    background-image: url(../images/bt_revisao_hover.png);
+    max-width: 100%;
+    width: 191px;
+    height: 179px;
+    background-color: transparent;
+    border: none;
+    transform: scale(0.95);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+.center {
+    text-align: center;
+}
+/* XXXXXXXXXXXXXXXXXXXXX SLIDER XXXXXXXXXXXXXXXXXXXXXXXX */
+.carousel-control.left, .carousel-control.right {
+    background-image: none;
+}
+.carousel-indicators {
+    bottom: -36px;
+}
+.carousel-control .glyphicon-chevron-right {
+    margin: -30px -2px 0 56px;
+    right: 0;
+    background-image: url(../images/avancar_slider.png);
+    width: 60px !important;
+    height: 60px !important;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.carousel-control .glyphicon-chevron-right:hover {
+    margin-top: -30px;
+    background-image: url(../images/avancar_slider_hover.png);
+    width: 60px !important;
+    height: 60px !important;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.carousel-control .glyphicon-chevron-left {
+    margin-top: -30px;
+    left: 2px;
+    background-image: url(../images/voltar_slider.png);
+    width: 60px !important;
+    height: 60px !important;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.carousel-control .glyphicon-chevron-left:hover {
+    margin-top: -30px;
+    background-image: url(../images/voltar_slider_hover.png);
+    width: 60px !important;
+    height: 60px !important;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.glyphicon-chevron-right::before, .glyphicon-chevron-left::before {
+    content: "" !important;
+}
+.glyphicon {
+    
+}
+.carousel-indicators li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 1px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #fff;
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 10px;
+}
+/* XXXXXXXXXXXXXXXXXXXXX FIM DO SLIDER XXXXXXXXXXXXXXXXXXXXXXXX */
+/* XXXXXXXXXXXXXXXXXXXXX MODAL XXXXXXXXXXXXXXXXXXXXXXXX */
+.modal_x{
+    background-image: url(../images/fechar.png);
+    width: 40px;
+    height: 39px;
+    position: absolute;
+    right: 30px;
+    background-color: transparent;
+    border: 0;
+    z-index: 9999999999;
+    top: 30px;
+}
+.modal_x:hover{
+    transform: scale(0.9)
+}
+.botao_modal_fechar {
+    background-color: rgb(95, 150, 215);
+    color: #fff;
+    font-family: 'Roboto Condensed', sans-serif;
+    /* font-weight: bold; */
+    font-size: 20px;
+    border: 0;
+    padding: 5px 30px;
+    margin-bottom: 50px;
+}
+.botao_modal_fechar:hover {
+    background-color: #2d2d2d;
+    color: #fff;
+}
+.modal-100 .modal-content p {
+    color: #000 !important;
+}
+.modal-body {
+    padding: 0 200px 0 200px;
+}
+.modal-100 {
+    background-color: rgba(20, 20, 20, 0.5) !important;
+}
+.modal-content {
+    background-color: rgba(30, 30, 30, 0.9);
+}
+.modal-title {
+    padding-left: 200px;
+}
+.modal-100 .modal-content .modal-body p {
+    color: white !important;
+}
+/* XXXXXXXXXXXXXXXXXXXXX FIM DO MODAL XXXXXXXXXXXXXXXXXXXXXXXX */
+/* GAITINHA INICIO */
+.bts_exemplo{
+    border:  2px solid rgb(95, 150, 215);
+    padding: 8px;
+    width: 100%;
+    display: block;
+    background-color: transparent;
+    color: rgb(95, 150, 215);
+    font-weight: bold;
+    text-align: left;
+    margin: 4px;
+    text-transform: uppercase;
+    font-family: fira_codelight;
+ }
+ .bts_exemplo:hover{
+    border-color:rgb(95, 150, 215);
+ }
+ #bs-exemplo01,#bs-exemplo02,#bs-exemplo03,#bs-exemplo04,#bs-exemplo05,#bs-exemplo06,#bs-exemplo07,#bs-exemplo08{
+    padding-top: 1px;
+    margin-left: 20px;
+    border-left:  2px solid rgb(95, 150, 215);
+ }
+ 
+ .bts_exemplo.ativo{
+    background-color: rgb(95, 150, 215);
+    color: white;
+ }
+ .conteudo-gaitinha li {
+     /* color: white !important; */
+ }
+ 
+ .modal-title{
+    color:#2980B9;
+ }
+ 
+ #modal-bloco3_mod2 .panel-group .panel-heading{
+    background-color: transparent;
+    color: #FFB117;
+    text-transform: uppercase;
+    padding: 6px;
+    border: 2px solid #FFB117;
+    border-radius: 8px !important;
+ }
+ #modal-bloco3_mod2 .panel-group .panel-heading:hover{
+    background-color: #FFB117;
+    color: white;
+ }
+ 
+ 
+ #modal-bloco3_mod2 .panel-default > .panel-heading + .panel-collapse > .panel-body {
+    border-top-color: transparent;
+    margin-left: 30px;
+    margin-top: 10px;
+    border-left: 2px solid #FFB117;
+ }
+ 
+ #modal-bloco3_mod2 .panel-collapse{
+    margin-left: 40px; padding-left: 20px;
+    border-left: 2px solid #FFB117;
+ }
+ ul.conteudo-gaitinha {
+     margin: 20px 0 0 0;
+ }
+ ul.conteudo-gaitinha li {
+     list-style: none;
+     color: #000;
+     margin-left: 0;
+ }
+ /* GAITINHA FIM */
+ ul.lista-01 {
+    margin: 0;
+  }
+  ul.lista-01 li {
+    font-size: 16px;
+    font-family: roboto, sans-serif;
+    color: #000;
+    list-style: none;
+  }
+  ul.lista-01 li::before {
+    background-image: url(../images/bullet-seta.png);
+    position: absolute;
+    width: 17px;
+    height: 14px;
+    margin: 4px 0 0 -30px; 
+    content: "";
+  }
+  ul.lista-02 li {
+    font-size: 16px;
+    font-family: roboto, sans-serif;
+    color: rgb(95, 150, 215);
+    list-style: none;
+  }
+  ul.lista-02 li::before {
+    background-image: url(../images/bullet-seta.png);
+    position: absolute;
+    width: 17px;
+    height: 14px;
+    margin: 4px 0 0 -30px; 
+    content: "";
+  }
+  ul.lista-modal {
+    margin: 0;
+  }
+  ul.lista-modal li {
+    font-size: 16px;
+    font-family: roboto, sans-serif;
+    color: #fff;
+    list-style: none;
+  }
+  ul.lista-modal li::before {
+    background-image: url(../images/bullet-seta.png);
+    position: absolute;
+    width: 17px;
+    height: 14px;
+    margin: 4px 0 0 -30px; 
+    content: "";
+  }
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+pre {
+    background-color: unset;
+    border: unset;
+}
+.hljs {
+    background-color: black !important;
+    font-size: 16px;
+}
+h1 {
+    color: rgb(95, 150, 215);
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+    line-height: 36px;
+}
+h2 {
+    color: rgb(95, 150, 215);
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+    line-height: 36px;
+}
+h4 {
+    color: rgb(95, 150, 215);
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+    line-height: 36px;
+    margin-bottom: 20px;
+}
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    color: #000; 
+    line-height: 30px;
+    letter-spacing: 1px;
+}
+.desafio-frente {
+    padding: 50px 50px 250px 50px;
+    position: relative;
+    background-color: rgb(95, 150, 215);
+    font-weight: bold;
+    color: white;
+    width: 50%;
+    margin: 0 auto 50px auto;
+    text-align: center;
+}
+.desafio-frente::before {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -30px;
+    margin-left: -77px;
+    width: 155px;
+    height: 154px;
+    background-image: url(../images/desafio.png);
+    content: "";
+	background-size: contain;
+	background-position: center center;
+    background-repeat: no-repeat;
+}
+.desafio-frente:hover::before {
+    transform: scale(1.05);
+}
+.desafio-verso {
+    padding: 50px;
+    position: relative;
+    background-color: rgb(95, 150, 215);
+    font-weight: bold;
+    color: white;
+    width: 50%;
+    margin: 0 auto 50px auto;
+    text-align: center;
+}
+.desafio-verso-d3{
+    padding: 50px;
+    position: relative;
+    background-color: rgb(95, 150, 215);
+    font-weight: bold;
+    color: white;
+    width: 90%;
+    margin: 0 auto 50px auto;
+    text-align: center;
+}
+.p-desafio {
+    font-weight: bold;
+    color: white;
+}
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+@media screen and (max-width:1200px){
+    .btn-01:hover {
+        left: 120px;
+        margin-top: -40px;
+        z-index: 0;
+
+    }
+    .btn-02:hover {
+        left: 250px;
+        margin-bottom: -80px;
+        z-index: 15;
+
+    }
+    .igs {
+        transform: scale(0.8);
+    }
+    
+}
+@media only screen and (max-width: 768px) {
+    .btn-01 {
+        width: 55%;
+    }
+    .btn-02 {
+        width: 60%;
+        margin-top: 80px;
+    }
+    .btn-01:hover {
+        transform: scale(0.7);
+        margin: -50px 0 0 -180px;
+        z-index: 0;
+    }
+    .btn-02:hover {
+        transform: scale(0.7);
+        left: 50px;
+        margin: 20px 0 0 20px;
+        z-index: 15;
+
+    }
+    .ig-01{
+        left: 0;   
+    }
+    .ig-02{
+        left: 62px;   
+    }
+    .ig-03{
+        left: 56px;   
+    }
+    .ig-04{
+        left: 168px;   
+    }
+    .ig-05{
+        left: 361px;   
+    }
+  }
+  @media only screen and (max-width: 560px) {
+    .igs {
+        transform: scale(0.6);
+    }
+  }
+
+

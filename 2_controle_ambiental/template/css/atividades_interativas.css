@@ -1,0 +1,62 @@
+@font-face{
+    src: url(../fonts/SourceSerifPro-Regular.ttf);
+    font-family: source;
+}
+
+
+/*Esquema da Bru*/
+div.esquemaDaBru {
+    list-style-position: inside;
+    list-style-type: lower-alpha;
+}
+.esquemaDaBru .alt-c, .esquemaDaBru .alt-e{
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position-y: center;
+    background-position-x: 98%;
+    padding: 5px 10px;
+    margin: 0;
+    width: fit-content;
+    padding-right: 60px;
+    transition: 150ms;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #000;
+    background-color: transparent;
+    border:none;
+    display: flex;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-family: source;
+    text-align: left;
+    margin-left: 20px;
+    width: 100%;
+    max-width: 600px;
+}
+.esquemaDaBru .alt-c:hover, .esquemaDaBru .alt-e:hover{
+    background-color: lightgoldenrodyellow;
+    padding-right: 60px;
+}
+.esquemaDaBru .alt-c.certo{
+    background-color: rgb(215, 235, 175);    
+    background-image: url(../objetos/ico-positive.png);    
+}
+.esquemaDaBru .alt-e.errado{
+    background-color: rgb(235, 175, 175);   
+    background-image: url(../objetos/ico-negative.png);    
+}
+h4.subQuiz{
+    margin-top: 0;
+}
+p.enunciado{
+    border-top: 2px dashed;
+    padding-top: 10px;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+@media screen and (max-width:480px){
+    div.esquemaDaBru{
+        padding: 0;
+    }
+}

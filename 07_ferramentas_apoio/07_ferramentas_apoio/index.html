@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Ferramentas de apoio a projetos de software</title>
+
+    <!-- Bootstrap -->
+    <link href="../template/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../template/fonts/fontes.css" rel="stylesheet">
+    <link href="../template/css/tecnicos_senac.css" rel="stylesheet">
+    <link href="../template/css/cores.css" rel="stylesheet">
+    <link href="../template/css/sncload.css" rel="stylesheet">
+    <link href="../template/css/magnific-popup.css" rel="stylesheet">
+    <!--Extras - novas classes para facilitar-->
+    <link rel="stylesheet" href="../template/css/extras.css">
+    <!-- css necessario para o print -->
+    <link href="../template/css/fa/css/font-awesome.min.css" type="text/css" rel="stylesheet">
+    <link href="../template/css/print.css" type="text/css" rel="stylesheet">
+	<!--<link href="css/custom2.css" rel="stylesheet">-->
+	<link href="css/custom.css" rel="stylesheet">
+    <link href="css/modal100.css" rel="stylesheet">
+	<link href="../template/fonts/roboto.css" type="text/css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+  
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Paulo Ricardo Soveral Junior</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">46914800.0000000</mso:Order>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Paulo Ricardo Soveral Junior</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ContentTypeId msdt:dt="string">0x010100393332CEE5C5294F9D2C3CF7CCDACBE5</mso:ContentTypeId>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+
+<body onLoad="Javascript:document.getElementById('sncloader').style.display='none';">
+    <!-- MARCA D´ÁGUA -->
+    <img src="../template/images/logo_senac_colorido.png" id="marcadaguaLogo">
+    <!-- /MARCA D´ÁGUA -->
+
+    <div id='sncloader' class='over-loader'><div class="over-cell"><div id="sncload"></div></div></div>
+    <header id="topo" class="senac no-print">
+        <div  class="header-tecnicos container">
+        	  <h1 id="nome-curso">Desenvolvimento de Sistemas</h1>
+            <div id="logo-senac"><img src="../template/images/logo-senac.png" alt="logo do senac"></div>
+        </div>
+        <div id="sombra"></div>
+    </header>
+
+    <div id="booklet">
+		<!-- - - - - - - - - - - - - - - - não alterar acima - - - - - - - - - - - - -->
+        <section class="paginas">
+
+			<!-- - - - - - - - cada página é independente  - - - - - - - - - - -->
+			<div class="pagina">
+				<header class="no-print hidden-xs" aria-hidden="true">
+                    <div class="barra-amarela">
+                        <div class="container" style="background-color: #808DA3;">
+                        <!-- BTO IMPRIMIR -->
+                        <h2 class="text-center" style="color: #fff;padding-top:40px;">Ferramentas de apoio a projetos de <i>software</i></h2>
+                      </div>
+
+                        <!-- /BTO IMPRIMIR -->
+                    </div>
+				</header>
+                <div class="menu hidden-xs" aria-hidden="true">
+                  <div class="center-block menu-central">
+                    <ul class="nav nav-tabs " role="tablist">
+                        <li style="outline:0; margin-top: 40px;" role="presentation" class="active"><a href="#conteudo01" aria-controls="conteudo01" role="tab" data-toggle="tab" class="introducao"><span style="font-size:0px">Definições</span></a></li>
+                        <li style="outline:0; margin-top: 40px;" role="presentation"><a href="#conteudo02" aria-controls="conteudo02" role="tab" data-toggle="tab" class="extintores"><span style="font-size:0px">Aplicabilidade</span></a></li>
+                        <li style="outline:0; margin-top: 40px;" role="presentation"><a href="#conteudo03" aria-controls="conteudo03" role="tab" data-toggle="tab" class="sprinklers"><span style="font-size:0px">Acompanhamento de tarefas</span></a></li>
+                        <li style="outline:0; margin-top: 40px;" role="presentation"><a href="#conteudo04" aria-controls="conteudo04" role="tab" data-toggle="tab" class="sistemas"><span style="font-size:0px">Integração em equipe</span></a></li>
+                        <li style="outline:0; margin-top: 40px;" role="presentation"><a href="#conteudo05" aria-controls="conteudo05" role="tab" data-toggle="tab" class="comunicacao"><span style="font-size:0px">Controle de datas</span></a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="container tecnico">
+					<div class="acessivel no-print">
+						<p>Como sugestão, configure a opção de leitura de caracteres e de pontuação de seu leitor de tela para o grau máximo de leitura, para que os códigos disponibilizados neste material sejam lidos corretamente. No caso do NVDA (Nonvisual Desktop Access), para localizar a opção Grau de pontuação/símbolos, acesse Preferências – Configurações – Fala. Altere o padrão Pouco para Tudo. Dessa forma, você passará a ler os segmentos de código em sua totalidade.</p>
+					</div>
+					<ul class="menuh no-print" aria-hidden="true">
+						<li>
+							<button class="menuh nav-menuh"></button>
+							<ul class="menuh-drop">
+								<li><a href="#conteudo01" aria-controls="conteudo01" role="tab" data-toggle="tab" class="introducao">Definições</a></li>
+								<li><a href="#conteudo02" aria-controls="conteudo02" role="tab" data-toggle="tab" class="extintores">Aplicabilidade</a></li>
+								<li><a href="#conteudo03" aria-controls="conteudo03" role="tab" data-toggle="tab" class="sprinklers">Acompanhamento de tarefas</a></li>
+								<li><a href="#conteudo04" aria-controls="conteudo04" role="tab" data-toggle="tab" class="sistemas">Integração em equipe</a></li>
+								<li><a href="#conteudo05" aria-controls="conteudo05" role="tab" data-toggle="tab" class="comunicacao">Controle de datas</a></li>                   
+							</ul>
+						</li>               
+					</ul>
+					<div class="grupo-imprimir no-print visible-xs"  style="margin-top: 30px; margin-bottom: 50px;">
+						<button type="button" data-pdf="true" class="bto-imprimir" name="button">
+							<span class="fa fa-print"></span> <span>Imprimir</span>
+						</button>
+					</div>
+                	
+					<div class="tab-content" style="clear: both;">
+						<div class="grupo-imprimir no-print visible-lg visible-md visible-sm" style="margin-top: -20px;">
+							<button type="button" data-pdf="true" class="bto-imprimir" name="button">
+								<span class="fa fa-print"></span> <span>Imprimir</span>
+							</button>
+						</div>
+                        <div role="tabpanel" class="tab-pane fade in active" id="conteudo01">
+							<!--conteudo 01-->
+							<div id="conteudo-introducao" class="conteudo-pagina" style="width: 750px;">
+								<br><br>
+								<div class="row">
+									<div class="col-md-5">
+										<br><br><img src="objetos/assets/ilustra01.png" class="img-responsive center-block">
+									</div>
+									<div class="col-md-7">
+										<p>A gestão de projetos tem o objetivo de organizar todas as atividades nas quais o seu time está operando. Com essa gestão, é primordial que a equipe consiga garantir a entrega de resultados e o cumprimento de metas. É por isso que a gestão de tarefas é tão essencial, pois permite o acompanhamento de cada etapa do processo e a divisão justa de responsabilidades, considerando a capacidade de cada membro da equipe; auxilia na otimização da produtividade e promove o trabalho em equipe na execução dos projetos.</p>
+									</div>
+								</div>
+								<p>Mas nem sempre esses objetivos são alcançados, já que, quanto mais complexo for o projeto, mais difícil a gestão se torna. Integrantes que não sabem o que fazer, tarefas desorganizadas, entregas atrasadas, jornadas de trabalho mais longas, essas são apenas algumas das consequências que podem ocorrer caso haja uma perda de controle na gestão de um projeto. É aqui que entram as ferramentas de apoio a projetos de <i>software</i>.</p>
+								<br>
+								<h2>Definições</h2>
+								<p>A rotina de uma equipe que trabalha com projetos de <i>software</i> é muito corrida e requer o controle de uma quantidade considerável de informações para que tudo ocorra como esperado.</p>
+								<img src="objetos/assets/ilustra02.png" class="img-responsive center-block">
+								<p>Para realizar esse controle, é muito comum a procura por ferramentas como quadros, papel, caneta e Post-Its para mapear e gerenciar o andamento de um projeto. Porém, esses recursos são muitas vezes ineficazes, já que precisam ocupar um lugar físico e nem sempre todos os integrantes têm acesso a esse local. Além disso, ainda há os gastos com a compra de materiais, os papéis são facilmente perdidos e, com frequência, essa abordagem acaba comprometendo o andamento do projeto. Por isso, um <i>software</i> de gestão de projetos é uma ferramenta tão recorrida por gestores de projetos, pois elas ajudam a centralizar, organizar e acessar todas as informações de um projeto em um só lugar da melhor forma possível.</p>
+								<p>Um dos fatores que ajudam a manter a motivação dos integrantes da equipe é a possibilidade de visualizar os progressos que estão sendo alcançados no projeto por meio das tarefas executadas. Nesse sentido, um sistema de gestão de projetos pode oferecer uma visão melhor do andamento das etapas do projeto, além de outros <i>feedbacks</i> que são disponibilizados pelas ferramentas de gestão.</p>
+								<p>Fazer uso de uma ferramenta de gestão de projetos aumenta a produtividade da sua equipe e aperfeiçoa várias funções como prevenção de riscos e fluxo de informações, além da centralização de todas as informações indispensáveis em apenas um local. Com a centralização das informações, a comunicação entre a equipe melhora e isso também influencia positivamente na gestão de tarefas da sua equipe. Assim, cada membro da equipe passa a ter acesso às informações que são do seu interesse.</p>
+								<p>Agora que você já sabe o que são e como as ferramentas de gestão podem ajudar no seu dia a dia, chegou a hora de conhecer algumas delas.</p>
+								<div class="caixa-destaque bg-primaria-03 texto-auxiliar-claro-02 icone importante">
+									<p>Existem atualmente muitas ferramentas de gestão de projetos. Algumas são mais simples, outras, mais complexas. Como são muitas as opções, este conteúdo focará nas principais ferramentas voltadas para a gestão de projetos de <i>software</i>.</p>
+								</div>
+								<h4>Principais ferramentas</h4>
+								<p>Confira a seguir a abordagem sobre as principais ferramentas de gestão de projetos:</p>
+								<p class="no-print" aria-hidden="true">Clique ou toque para visualizar o conteúdo.</p>
+								<div class='panel-group gaitinha no-print' id='accordion' role='tablist' aria-multiselectable='true' aria-hidden="true">
+									<div class='panel panel-default'>
+									  <div class='panel-heading' role='tab' id='headingOne'>
+										<h3 class='panel-title'>
+										  <a role='button' data-toggle='collapse' data-parent='#accordion' href='#collapseOne' aria-expanded='false' aria-controls='collapseOne'>
+											Trello
+										  </a>
+										</h3>
+									  </div>
+									  <div id='collapseOne' class='panel-collapse collapse in' role='tabpanel' aria-labelledby='headingOne'>
+										<div class='panel-body'>
+										  <img src="objetos/assets/fig01.jpg" class="img-responsive center-block">
+										  <p class="legenda-imagem">
+											Figura 1 – Página padrão do Trello <br>
+											Fonte: &lt;https://images.ctfassets.net/rz1oowkt5gyp/<br class="visible-xs">4kCNudjaBYj90CGgG7Lict/5c5cf3de6f8916d9cf82cb6fa864dc7e/<br class="visible-xs">TrelloTourPage_Boards_2x.png>. Acesso em: 4 nov. 2021.
+										  </p>
+										  <p>Baseado em <i>boards</i> da metodologia Kanban, o Trello é muito intuitivo. Ele funciona como um quadro branco virtual, no qual você pode organizar suas tarefas, listas de necessidades, ideias e muito mais. Criar fluxos de atividades com o Trello é simples e leve, o que torna a ferramenta bastante agradável e prazerosa de ser usada. </p>
+										</div>
+									  </div>
+									</div>
+									<div class='panel panel-default'>
+									  <div class='panel-heading' role='tab' id='headingTwo'>
+										<h3 class='panel-title'>
+										  <a class='collapsed' role='button' data-toggle='collapse' data-parent='#accordion' href='#collapseTwo' aria-expanded='false' aria-controls='collapseTwo'>
+											Jira Software
+										  </a>
+										</h3>
+									  </div>
+									  <div id='collapseTwo' class='panel-collapse collapse' role='tabpanel' aria-labelledby='headingTwo'>
+										<div class='panel-body'>
+											<img src="objetos/assets/fig02.jpg" class="img-responsive center-block">
+											<p class="legenda-imagem">
+												Figura 2 – Página de tarefas do Jira <br>
+												Fonte: &lt;https://3kllhk1ibq34qk6sp3bhtox1-wpengine.netdna-ssl.com/wp-content/uploads/JIRA-Software-agile-board.png>. Acesso em: 4 nov. 2021.
+											</p>
+											<p>Desenvolvido pela Atlassian, Jira Software é uma ferramenta que permite o gerenciamento de atividades, monitoramento de tarefas e acompanhamento de projetos em único lugar. Apesar de haver muitas semelhanças com a ferramenta Trello, Jira é uma ferramenta de gestão focada no desenvolvimento de <i>software</i> em metodologias ágeis, enquanto o Trello é uma ferramenta mais livre, na qual se pode gerenciar desde tarefas pessoais até grandes projetos. Sendo assim, os principais recursos são voltados para essa finalidade. Com fluxos de trabalho Scrum e Kanban (para mais informações, consulte o material sobre as metodologias de desenvolvimento de <i>software</i> desta unidade curricular), gráficos de <i>burndown</i>, estimativas de entrega, relatórios de <i>sprint</i> e muito mais, a ferramenta Jira contém tudo o que você precisa para o desenvolvimento de <i>softwares</i> em equipes.</p>
+										</div>
+									  </div>
+									</div>
+									<div class='panel panel-default'>
+									  <div class='panel-heading' role='tab' id='headingThree'>
+										<h3 class='panel-title'>
+										  <a class='collapsed' role='button' data-toggle='collapse' data-parent='#accordion' href='#collapseThree' aria-expanded='false' aria-controls='collapseThree'>
+											Microsoft Project
+										  </a>
+										</h3>
+									  </div>
+									  <div id='collapseThree' class='panel-collapse collapse' role='tabpanel' aria-labelledby='headingThree'>
+										<div class='panel-body'>
+											<img src="objetos/assets/fig03.jpg" class="img-responsive center-block">
+											<p class="legenda-imagem">
+												Figura 3 – Tela padrão do Microsoft Project <br>
+												Fonte: &lt;https://gdm-catalog-fmapi-prod.imgix.net/ProductScreenshot/78aef075-2072-4905-a8e5-9b3defa77b74.png?auto=format&q=50&fit=fill>. Acesso em: 4 nov. 2021.
+											</p>
+											<p>Desenvolvido pela Microsoft, é uma ferramenta de gestão de projetos com um grande número de recursos para facilitar o controle de tarefas, destacando-se os recursos de controle de prazos e os calendários detalhados de tarefas, permitindo ainda visualização de dados em diversas configurações e a distribuição automática de tarefas. É um dos <i>softwares</i> mais usados para gerenciamento de projeto, mas a sua grande quantidade de recursos pode tornar o uso da ferramenta bastante complexo.</p>
+										</div>
+									  </div>
+									</div>
+									<div class='panel panel-default'>
+										<div class='panel-heading' role='tab' id='headingFour'>
+											<h3 class='panel-title'>
+											<a class='collapsed' role='button' data-toggle='collapse' data-parent='#accordion' href='#collapseFour' aria-expanded='false' aria-controls='collapseFour'>
+												Microsoft TFS
+											</a>
+											</h3>
+										</div>
+										<div id='collapseFour' class='panel-collapse collapse' role='tabpanel' aria-labelledby='headingFour'>
+											<div class='panel-body'>
+												<img src="objetos/assets/fig04.jpg" class="img-responsive center-block">
+												<p class="legenda-imagem">
+													Figura 4 – Tela de <i>backlogs</i> do TFS <br>
+													Fonte: &lt;https://docs.microsoft.com/pt-br/visualstudio/releasenotes/media/backlogextensionpoint-12.png>. Acesso em: 4 nov. 2021.
+												</p>
+												<p>O Microsoft Team Foundation Server, ou simplesmente Microsoft TFS, é uma ferramenta que oferece suporte ao gerenciamento de projetos ágil e em cascata. Ela fornece um ambiente para gerenciar os requisitos de um projeto de <i>software</i>, apresentando fluxos de trabalho personalizados, com estados, transições, entre outros recursos. Além das funcionalidades nativas, a ferramenta também pode ser integrada a outros <i>softwares</i> como PowerPoint, Excel, Microsoft Project, Git, entre outros.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="acessivel">
+									<h4>Trello</h4>
+									<img src="objetos/assets/fig01.jpg" class="img-responsive center-block" aria-hidden="true">
+									<p>Figura 1 – Página padrão do Trello</p>
+									<p>Fonte: &lt;https://images.ctfassets.net/rz1oowkt5gyp/4kCNudjaBYj90CGgG7Lict/5c5cf3de6f8916d9cf82cb6fa864dc7e/TrelloTourPage_Boards_2x.png>. Acesso em: 4 nov. 2021.</p>
+									<p class="no-print">Página do Trello mostrando três colunas com tarefas em cada uma delas. As tarefas são representadas por cartões com rótulo colorido, título e ícone de usuários.</p>
+									<p>Baseado em <i>boards</i> da metodologia Kanban, o Trello é muito intuitivo. Ele funciona como um quadro branco virtual, no qual você pode organizar suas tarefas, listas de necessidades, ideias e muito mais. Criar fluxos de atividades com o Trello é simples e leve, o que torna a ferramenta bastante agradável e prazerosa de ser usada.</p>
+									<h4>Jira Software</h4>
+									<img src="objetos/assets/fig02.jpg" class="img-responsive center-block" aria-hidden="true">
+									<p>Figura 2 – Página de tarefas do Jira</p>
+									<p>Fonte: &lt;https://3kllhk1ibq34qk6sp3bhtox1-wpengine.netdna-ssl.com/wp-content/uploads/JIRA-Software-agile-board.png>. Acesso em: 4 nov. 2021.</p>
+									<p class="no-print">Página principal do Jira, com um menu lateral à esquerda e, na parte principal, um quadro com três colunas e variadas tarefas, cada uma representada por um cartão com uma cor lateral indicando prioridade, um título, uma descrição e uma foto do usuário associado à tarefa.</p>
+									<p>Desenvolvido pela Atlassian, Jira Software é uma ferramenta que permite o gerenciamento de atividades, monitoramento de tarefas e acompanhamento de projetos em único lugar. Apesar de haver muitas semelhanças com a ferramenta Trello, Jira é uma ferramenta de gestão focada no desenvolvimento de <i>software</i> em metodologias ágeis, enquanto o Trello é uma ferramenta mais livre, na qual se pode gerenciar desde tarefas pessoais até grandes projetos. Sendo assim, os principais recursos são voltados para essa finalidade. Com fluxos de trabalho Scrum e Kanban (para mais informações, consulte o material sobre as metodologias de desenvolvimento de <i>software</i> desta unidade curricular), gráficos de <i>burndown</i>, estimativas de entrega, relatórios de <i>sprint</i> e muito mais, a ferramenta Jira contém tudo o que você precisa para o desenvolvimento de <i>softwares</i> em equipes.</p>
+									<h4>Microsoft Project</h4>
+									<img src="objetos/assets/fig03.jpg" class="img-responsive center-block" aria-hidden="true">
+									<p>Figura 3 – Tela padrão do Microsoft Project</p>
+									<p>Fonte: &lt;https://gdm-catalog-fmapi-prod.imgix.net/ProductScreenshot/78aef075-2072-4905-a8e5-9b3defa77b74.png?auto=format&q=50&fit=fill>. Acesso em: 4 nov. 2021.</p>
+									<p class="no-print">Tela do Microsoft Project, mostrando à esquerda, verticalmente, uma série de títulos de tarefas. À direita está um gráfico de Gantt representando os prazos de cada tarefa.</p>
+									<p>Desenvolvido pela Microsoft, é uma ferramenta de gestão de projetos com um grande número de recursos para facilitar o controle de tarefas, destacando-se os recursos de controle de prazos e os calendários detalhados de tarefas, permitindo ainda visualização de dados em diversas configurações e a distribuição automática de tarefas. É um dos <i>softwares</i> mais usados para gerenciamento de projeto, mas a sua grande quantidade de recursos pode tornar o uso da ferramenta bastante complexo.</p>
+									<h4>Microsoft TFS</h4>
+									<img src="objetos/assets/fig04.jpg" class="img-responsive center-block" aria-hidden="true">
+									<p>Figura 4 – Tela de <i>backlogs</i> do TFS</p>
+									<p>Fonte: &lt;https://docs.microsoft.com/pt-br/visualstudio/releasenotes/media/backlogextensionpoint-12.png>. Acesso em: 4 nov. 2021.</p>
+									<p class="no-print">Página do TFS, mostrando acima um gráfico de evolução das tarefas e abaixo uma lista de tarefas cadastradas. À direita, detalhes de uma tarefa selecionada.</p>
+									<p>O Microsoft Team Foundation Server, ou simplesmente Microsoft TFS, é uma ferramenta que oferece suporte ao gerenciamento de projetos ágil e em cascata. Ela fornece um ambiente para gerenciar os requisitos de um projeto de <i>software</i>, apresentando fluxos de trabalho personalizados, com estados, transições, entre outros recursos. Além das funcionalidades nativas, a ferramenta também pode ser integrada a outros <i>softwares</i> como PowerPoint, Excel, Microsoft Project, Git, entre outros.</p>
+								</div>
+								<div class="caixa-destaque bg-primaria-03 texto-auxiliar-claro-02 icone dica">
+									<p>Pesquise na <i>web</i>, utilizando seu buscador de preferência, cada uma dessas ferramentas e conheça mais sobre elas. Tente encontrar ainda outras ferramentas semelhantes.</p>
+								</div>
+							</div>
+              <!--/conteudo 01 -->
+
+							<!-- <a href="#topo" class="no-print botao-subir visible-lg visible-md visible-sm" role="button" aria-hidden="true">SUBIR</a> -->
+							<a href="#topo"><button class="btn-voltar-topo no-print"></button></a>
+							<a href="#conteudo-extintores" alt="avancar" class="no-print botao-avancar acessivel">Avançar</a>
+            </div>
+            <!--/item-->
+
+            <!--item-->
+            <div role="tabpanel" class="tab-pane fade" id="conteudo02">
+							<!--conteudo 02-->
+							<div id="conteudo-extintores" class="conteudo-pagina" style="width: 750px;">
+								<h2>Aplicabilidade</h2>
+								<p>Agora que você já sabe como funciona a gestão de projetos de <i>software</i> e quais as principais ferramentas que podem ajudá-lo nessa tarefa, observe uma abordagem mais prática para a aplicação de todos esses conceitos. Para isso, será utilizada a ferramenta <b>Trello</b>. A ferramenta é gratuita e pode ser acessada diretamente pelo seu navegador de Internet. Caso tenha interesse, o Trello também está disponível em formato de aplicativo para dispositivos móveis e pode ser baixado diretamente da loja do dispositivo.</p>
+								<p>Para acessar, procure por “Trello” em seu buscador <i>web</i> preferido.</p>
+								<img src="objetos/assets/fig05.jpg" class="img-responsive center-block">
+								<p class="legenda-imagem">
+									Figura 5 – Página inicial do Trello <br>
+									Fonte: &lt;https://trello.com/pt-BR?&aceid=&adposition=&adgroup=113770574286&campaign=11821318527&creative=486381205189&device=c&keyword=trello&matchtype=e&network=g&placement=<br>&ds_kids=p59407427523&ds_e=google&ds_eid=700000001550057&ds_e1=google&gclid=cjwkcajwiy6mbhbqeiwarfscppyz4-kp82aq5jxwqlhpsnzj9cu91uygwedwura28jyyxzlss9g06rocerkqavd_bwe&gclsrc=aw.ds>. Acesso em: 4 nov. 2021.
+								</p>
+								<p class="acessivel">Na página há o título “Trello” no topo. No corpo, em letras grandes, consta a frase “O Trello ajuda os times a agilizar o trabalho”, e mais descrições abaixo. Em seguida, há um campo de e-mail e um botão “Cadastre-se, é grátis”. No topo, à direita, links “Faça login” e “Cadastrar-se”.</p>
+								<div class="caixa-destaque bg-primaria-03 texto-auxiliar-claro-02 icone atencao">
+									<p>Antes de seguir com o conteúdo, recomenda-se que você já tenha criado uma conta no Trello para conseguir acompanhar os exemplos. Caso ainda não tenha, esse é o melhor momento para você acessar o <i>site</i> oficial da ferramenta e criar uma conta. O processo é bem simples e rápido! Assim que você estiver autenticado na plataforma, volte aqui para dar sequência à sua prática.</p>
+								</div>
+								<p>A primeira etapa será criar um quadro para o seu projeto. Se você já estiver com a ferramenta Trello aberta, basta clicar sobre o botão <b>Criar</b>, na barra superior, selecionar a opção <b>Criar quadro</b> e informar o título do quadro. Se você estiver usando uma tela com uma resolução baixa, o Trello pode adaptar o botão <b>Criar</b> para um botão com um ícone de “+”.</p>
+								<img src="objetos/assets/fig06.jpg" class="img-responsive center-block">
+								<p class="legenda-imagem">
+									Figura 6 – Criação de quadro no Trello <br>
+									Fonte: adaptado de Trello (2021)
+								</p>
+								<p class="acessivel">A imagem mostra a tela inicial do Trello com alguns quadros criados. Na barra azul superior, a opção “Criar” está destacada com um contorno vermelho e, logo abaixo, há uma pequena janela com as opções “Criar quadro”, “Começar com um template (Novo)”, “Criar Área de trabalho” e “Criar Área de trabalho de negócios”. A opção “Criar quadro” está destacada com um contorno vermelho sobre a opção.</p>
+								<p>Para este exemplo, imagine que você está trabalhando com uma equipe de desenvolvedores em um projeto de loja virtual para uma empresa específica. O projeto é de uma loja virtual, sendo assim, fica definido o título do quadro como “Loja Virtual”. Repare que ainda não se definiu como será esse projeto, quão complexo ele será nem quantas funcionalidades ele terá. Mesmo assim, você já sabe sobre o que se trata. É essa a ideia! Não há necessidade de se usar nomes extensos ou complexos. A ideia é que o título seja simples, claro e objetivo para facilitar o entendimento de todos os integrantes da equipe.</p>
+								<p>Além do título, também é possível definir uma imagem ou cor de fundo para o quadro. Depois que o quadro for criado, você pode acessar as configurações e procurar outras imagens ou selecionar outras cores, caso queira. Para esse exemplo, será selecionada a cor azul e finalizada a criação do quadro. Assim que concluída essa criação, siga para a criação de tarefas.</p>
+								<img src="objetos/assets/fig07.jpg" class="img-responsive center-block">
+								<p class="legenda-imagem">
+									Figura 7 – Configuração do quadro no Trello <br>
+									Fonte: adaptado de Trello (2021)
+								</p>
+								<p class="acessivel">Na imagem consta a tela de criação de quadro do Trello. O nome do quadro está preenchido com “Loja Virtual” e a cor de fundo do quadro está com a cor azul. Ao lado do quadro retangular, há nove quadrados pequenos que podem ser selecionados para definir a cor de fundo do quadro. A cor azul está selecionada. Abaixo, há um retângulo informando que a área de trabalho contém quatro de dez quadros gratuitos. Logo abaixo do retângulo, há o botão “Criar Quadro”, utilizado para concluir a criação do quadro.</p>
+							</div>
+							<!--conteudo 02-->
+							<!-- <a href="#topo" style="margin-top:30px;" class="no-print botao-subir visible-lg visible-md visible-sm" role="button" aria-hidden="true">SUBIR</a> -->
+							<a href="#topo"><button class="btn-voltar-topo no-print"></button></a>
+							<a href="#conteudo-introducao" class="acessivel">Voltar</a>
+							<a href="#conteudo-sprinklers" class="acessivel">avançar</a>
+						</div>
+						<!--/item-->
+
+						<!--item-->
+						<div role="tabpanel" class="tab-pane fade" id="conteudo03">
+							<!--conteudo 03-->
+							<div id="conteudo-sprinklers" class="conteudo-pagina" style="width: 750px;">
+								<h2>Acompanhamento de tarefas</h2>
+								<p>Tarefas são atividades únicas, que precisam ser realizadas dentro de um período de tempo previamente estabelecido. No contexto de desenvolvimento de <i>software</i>, os projetos são formados pelo agrupamento de diversas tarefas definidas a partir das funcionalidades necessárias no <i>software</i>. </p>
+								<p>Sendo assim, para que os requisitos de um projeto de <i>software</i> sejam cumpridos, são estruturadas diversas tarefas. </p>
+								<div class="row">
+									<div class="col-md-4">
+										<img src="objetos/assets/ilustra03.png" class="img-responsive center-block">
+									</div>
+									<div class="col-md-8">
+										<p>A ideia é que as tarefas sejam pequenas implementações das funcionalidades do <i>software</i> que o cliente espera receber ao final do projeto. Portanto, caso uma tarefa seja muito complexa, basta dividi-la em tarefas menores. </p>
+									</div>
+								</div>
+								<p>Seguindo com o exemplo de loja virtual, já se pode imaginar algumas funcionalidades para esse projeto, tais como:</p>
+								<ul class="cor01">
+									<li>Criar uma tela de boas-vindas ao cliente, exibindo produtos em destaque (dez últimos cadastrados no sistema)</li>
+									<li>Criar um catálogo virtual no qual o cliente poderá navegar e selecionar produtos</li>
+								</ul>
+								<p>Essas são apenas algumas funcionalidades básicas para o sistema. Reflita sobre o contexto de desenvolvimento de <i>software</i> e perceba que já existem várias tarefas para serem mapeadas. Observe agora a análise de cada item das funcionalidades mencionadas e a fragmentação delas em pequenas tarefas.</p>
+								<img src="objetos/assets/infografico1_layout.png" class="img-responsive center-block hidden-xs">
+								<img src="objetos/assets/infografico1-img1.png" class="img-responsive center-block visible-xs">
+								<br class="visible-xs">
+								<img src="objetos/assets/infografico1-img2.png" class="img-responsive center-block visible-xs">
+								<div class="acessivel no-print">
+									<p><b>Funcionalidade</b></p>
+									<ul>
+										<li>Criar uma tela de boas-vindas ao cliente exibindo produtos em destaque</li>
+										<ol type="1">
+											<p><b>Tarefas</b></p>
+											<li>Criar base de dados do sistema na qual ficarão salvas todas informações de produtos</li>
+											<li>Criar tela inicial de boas-vindas</li>
+											<li>Desenvolver função que buscará os últimos dez produtos cadastrados na base de dados</li>
+											<li>Montar exibição de produtos destaques na tela inicial</li>
+										</ol>
+										<li>Criar um catálogo virtual no qual o cliente poderá navegar e selecionar produto</li>
+										<ol type="1">
+											<p><b>Tarefas</b></p>
+											<li>Criar tela de catálogo virtual</li>
+											<li>Desenvolver função que buscará todos os produtos cadastrados na base de dados</li>
+											<li>Criar tela de exibição de detalhes sobre o produto selecionado</li>
+											<li>Desenvolver função que recuperará todos os detalhes de um determinado produto na base de dados</li>
+										</ol>
+									</ul>
+								</div>
+								<p>Repare que, apesar de serem poucas funcionalidades, já se tem uma lista bem extensa de tarefas. Dependendo da sua experiência em projetos de <i>software</i>, talvez você até esteja imaginando outras tarefas além das citadas. Realmente, em um projeto real haveria outras tarefas além dessas, mas como você ainda está aprendendo a usar uma ferramenta de gestão de projetos de <i>software</i>, não há necessidade de se estender muito a lista de tarefas. Lembre-se de que você está usando essa lista de tarefas apenas como um exemplo.</p>
+								<div class="caixa-destaque bg-primaria-03 texto-auxiliar-claro-02 icone anotar">
+									<p>De onde vieram essas tarefas?</p>
+									<p>Neste caso, trata-se de uma simulação, mas, na realidade, viriam da interpretação da funcionalidade proposta. Essas informações extras poderão ser obtidas ou inferidas pela equipe por meio do estudo de requisitos de um projeto. Para mais informações sobre requisitos, leia o conteúdo que trata das regras de negócio, desta unidade curricular.</p>
+								</div>
+								<p>Depois de saber quais as tarefas que você terá no projeto, chegou a hora de cadastrá-las no Trello. Primeiro, é preciso criar as colunas necessárias para adicionar e gerenciar as tarefas. Essas colunas são chamadas de <b>listas de tarefas</b>. Para que a gestão desse projeto seja simples, ela será baseada no modelo Kanban (consulte o material sobre as metodologias de desenvolvimento de <i>software</i>), sendo criadas três listas de tarefas: </p>
+								<div class="caixa-destaque bg-auxiliar-claro-02 borda-primaria-03">
+									<ol type="1">
+										<li><b>A fazer</b>: aqui estarão as tarefas que precisam ser feitas.</li>
+										<li><b>Em andamento...</b>: aqui ficarão as tarefas que estão sendo feitas.</li>
+										<li><b>Concluído</b>: aqui ficarão as tarefas já concluídas.</li>
+									</ol>
+								</div>
+								<p>Para isso, basta clicar em <b>Adicionar uma lista</b>, inserir o nome da lista de tarefas e concluir clicando em <b>Adicionar lista</b>.</p>
+								<img src="objetos/assets/fig08.gif" class="img-responsive center-block">
+								<p class="legenda-imagem">
+									Figura 8 – Adicionando uma lista <br>
+									Fonte: adaptado de Trello (2021)
+								</p>
+								<p class="acessivel">No GIF, consta a tela inicial de um quadro no Trello com o fundo azul. No canto superior esquerdo, há um retângulo com uma caixa de entrada de texto dizendo “Insira o título da lista”. Logo abaixo há o botão “Adicionar Lista”. O ponteiro do mouse se posiciona sobre a caixa de entrada de texto e é digitado o texto “A fazer”. Após isso, o botão “Adicionar Lista” é pressionado. Agora, o retângulo se modifica, apresentando o texto “A fazer” e um botão “Adicionar um cartão” abaixo. Também, um novo retângulo surge ao lado com uma caixa de entrada de texto dizendo “Insira o título da lista” e um botão “Adicionar Lista”. Novamente, o mouse se posiciona sobre a entrada de texto e cria a lista com o nome “Em andamento...”. O processo se repete mais uma vez e é criada uma terceira lista com o nome “Concluído”.</p>
+								<p>Assim que as listas de tarefas forem criadas, é possível começar a cadastrar as suas tarefas. Comece pela lista “A fazer”. </p>
+								<p>A tarefa precisa ter, pelo menos, duas informações: um número para ser usado como identificação para tarefa (ID) e um nome curto e descritivo (por exemplo: “1 – Tela de exibição de produtos”). O nome deve ser explicativo o bastante para que todos os envolvidos no projeto entendam sobre o que se está falando e específico o suficiente para se distinguir das outras tarefas. Lembre-se de que, caso a tarefa seja muito complexa, você pode dividi-la em tarefas menores.</p>
+								<p>Você se lembra da lista de tarefas criada anteriormente com base nas funcionalidades do sistema? Se você voltar nessa lista, perceberá que os nomes das tarefas, apesar de serem bem explicativos, estão bastante extensos. Então, é preciso resumir o nome dessas tarefas para que elas fiquem mais simples, claras e objetivas. Observe:</p>
+								<img src="objetos/assets/infografico2_layout.png" class="img-responsive center-block hidden-xs">
+								<img src="objetos/assets/infografico2-img1.png" class="img-responsive center-block visible-xs">
+								<br class="visible-xs">
+								<img src="objetos/assets/infografico2-img2.png" class="img-responsive center-block visible-xs">
+								<div class="acessivel no-print">
+									<p><b>Nome completo da tarefa</b></p>
+									<ol type="1">
+										<li>Criar base de dados do sistema na qual ficarão salvas todas informações de produtos</li>
+										<li>Criar tela inicial de boas-vindas</li>
+										<li>Desenvolver função que buscará os últimos dez produtos cadastrados na base de dados</li>
+										<li>Montar exibição de produtos destaques na tela inicial</li>
+										<li>Criar tela de catálogo virtual</li>
+										<li>Desenvolver função que buscará todos os produtos cadastrados na base de dados</li>
+										<li>Criar tela de exibição de detalhes sobre o produto selecionado</li>
+										<li>Desenvolver função que recuperará todos os detalhes de um determinado produto na base de dados</li>
+									</ol>
+									<p><b>Nome resumido da tarefa</b></p>
+									<ol type="1">
+										<li>Criar base de dados</li>
+										<li>Visual da tela inicial</li>
+										<li>Função de buscar dez últimos produtos cadastrados</li>
+										<li>Exibição de produtos destaques na tela inicial</li>
+										<li>Visual do catálogo virtual</li>
+										<li>Função de buscar todos os produtos</li>
+										<li>Visual da tela de detalhes de um determinado produto</li>
+										<li>Função de buscar detalhes de um determinado produto</li>
+									</ol>
+								</div>
+								<p>Percebeu como ficou mais simples? Agora que você tem os nomes das tarefas, é preciso voltar ao Trello e cadastrar cada uma delas.</p>
+								<p>No Trello, as tarefas são chamadas de <b>cartões</b>. Portanto, para adicionar um cartão, clique na opção <b>Adicionar um cartão</b> localizada abaixo da lista na qual você quer fazer a adição, informe o nome da tarefa na entrada de dados que aparecerá e, quando concluir, clique no botão <b>Adicionar cartão</b>.</p>
+								<p>No final, haverá uma lista mais ou menos assim:</p>
+								<img src="objetos/assets/fig09.jpg" class="img-responsive center-block">
+								<p class="legenda-imagem">
+									Figura 9 – Cartões cadastrados na lista “A fazer” <br>
+									Fonte: adaptado de Trello (2021)
+								</p>
+								<p class="acessivel">
+									A imagem mostra a tela inicial de um quadro no Trello com o fundo azul e três listas criadas: “A fazer”, “Em andamento...” e “Concluído”.
+									A lista “A fazer” contém oito cartões: “1 - Criar base de dados”; “2 - Visual da tela inicial”; “3 - Função de buscar dez últimos produtos cadastrados”; “4 - Exibição de produtos destaques na tela inicial”; “5 - Visual do catálogo virtual”; “6 - Função de buscar todos os produtos”; “7 - Visual da tela de detalhes de um determinado produto”; “8 - Função de buscar detalhes de um determinado produto”.
+								</p>
+								<h4>Prioridade</h4>
+								<div class="row">
+									<div class="col-md-4">
+										<img src="objetos/assets/ilustra04.png" class="img-responsive center-block">
+									</div>
+									<div class="col-md-8">
+										<p>Priorizar uma tarefa significa definir uma importância em relação às demais. Em um projeto de <i>software</i>, é muito importante saber a prioridade de uma tarefa, pois é a partir dessa informação que essas tarefas serão ordenadas, definindo-se assim quais serão desenvolvidas primeiro.</p>
+									</div>
+								</div>
+								<p>Existem alguns critérios que podem influenciar a prioridade de uma tarefa, como prioridades do cliente, dificuldade de implementação, urgência em receber <i>feedback</i> e relações entre tarefas (por exemplo, a tarefa B ficará mais fácil se a tarefa A for feita primeiro).</p>
+								<p>Como neste exemplo o cliente deseja uma loja virtual, é interessante que sejam priorizadas as tarefas essenciais para que essa loja virtual funcione. Para isso, é preciso utilizar uma etiqueta vermelha para ilustrar tarefas com prioridade alta, uma etiqueta amarela para prioridades médias e uma etiqueta verde para prioridades baixas.</p>
+								<p>Para adicionar uma etiqueta à tarefa, posicione o <i>mouse</i> sobre o cartão e isso revelará um ícone de lápis. Ao clicar no ícone, várias opções serão reveladas. Selecione <b>Editar etiquetas</b>, escolha a cor da etiqueta que deseja atribuir ao cartão e, após isso, conclua pressionando o botão <b>Salvar</b>.</p>
+								<img src="objetos/assets/fig10.gif" class="img-responsive center-block">
+								<p class="legenda-imagem">
+									Figura 10 – Adicionando etiqueta nos cartões <br>
+									Fonte: adaptado de Trello (2021)
+								</p>
+								<p class="acessivel">
+									No GIF, consta a tela inicial de um quadro no Trello com o fundo azul e três listas criadas: “A fazer”, “Em andamento...” e “Concluído”.
+									A lista “A fazer” contém os oito cartões criados até aqui. O mouse se posiciona sobre o primeiro cartão e, ao fazer isso, é revelado um ícone de lápis no canto direito do cartão. O mouse clica nesse ícone e as opções “Abrir cartão”, “Editar Etiquetas”, “Alterar Membros”, “Alterar capa”, “Mover”, “Copiar”, “Editar datas” e “Arquivar” aparecem no lado direito do cartão. A opção “Editar Etiquetas” é selecionada. Um menu lateral é aberto com o nome “Etiquetas” e nessa janela são apresentadas seis cores diferentes para serem selecionadas: verde, amarelo, laranja, vermelho, roxo e azul. A cor vermelha é seleciona e, logo após isso, o botão “Salvar” é pressionado.
+								</p>
+								<p>Se você quiser, também pode editar as etiquetas para exibir algum texto nelas. Essa é uma boa prática, pois ajuda a visualizar o que cada cor significa. Para isso, volte na opção <b>Editar Etiquetas</b>, clique no ícone de lápis ao lado da cor da etiqueta que deseja adicionar uma descrição, informe a descrição na entrada de dados que aparecer e pressione o botão <b>Salvar</b> para aplicar. Seguindo esse procedimento, você também pode criar novas etiquetas e trocar as cores de etiqueta já existentes.</p>
+								<img src="objetos/assets/fig11.gif" class="img-responsive center-block">
+								<p class="legenda-imagem">
+									Figura 11 – Editando etiquetas <br>
+									Fonte: adaptado de Trello (2021)
+								</p>
+								<p class="acessivel">
+									No GIF, consta a tela inicial de um quadro no Trello com o fundo azul e três listas criadas: “A fazer”, “Em andamento...” e “Concluído”. A lista “A fazer” contém os oito cartões criados até aqui.
+									O ponteiro do mouse se posiciona sobre o primeiro cartão e um ícone de lápis é revelado. O ícone é pressionado. Nesse momento, são apresentadas ao lado as opções “Abrir cartão”, “Editar Etiquetas”, “Alterar Membros”, “Alterar capa”, “Mover”, “Copiar”, “Editar datas” e “Arquivar”. A opção “Editar Etiquetas” é selecionada. Agora, o retângulo muda seu conteúdo e aparecem várias listas de cores com um ícone de lápis ao lado. A etiqueta vermelha é selecionada e, logo após isso, o ícone de lápis é pressionado. O retângulo se modifica e agora apresenta uma entrada de dados acima com título “Nome” e, abaixo, apresenta várias cores para serem selecionadas. A cor vermelha está pré-selecionada e o campo “Nome” é preenchido com “Alta”. Após isso, o botão “Salvar” é pressionado e volta-se à primeira tela. Agora, o primeiro cartão possui uma etiqueta vermelha com o texto “Alta” sobre ela.
+								</p>
+								<p>Depois de aprender a utilizar etiquetas no Trello, atribua uma etiqueta para as tarefas restantes.</p>
+							</div>
+							<!--conteudo 03-->
+							<!-- <a href="#topo" class="no-print botao-subir visible-lg visible-md visible-sm" role="button" aria-hidden="true">SUBIR</a> -->
+							<a href="#topo"><button class="btn-voltar-topo no-print"></button></a>
+							<a href="#conteudo-extintores" class="acessivel">Voltar</a>
+							<a href="#conteudo-provas" class="acessivel">avançar</a>
+						</div>
+						<!--/item-->
+
+						<!--item-->
+						<div role="tabpanel" class="tab-pane fade" id="conteudo04">
+							<!--conteudo 04-->
+							<div id="conteudo-provas" class="conteudo-pagina" style="width: 750px;">
+								<h2>Integração em equipes</h2>
+								<p>Outro recurso que o Trello oferece é a integração de membros na equipe. Para usar esse recurso, é necessário que os integrantes da equipe tenham uma conta no Trello. Para adicionar os membros da equipe ao quadro, basta selecionar a opção “Convidar” localizada acima da lista de tarefas e informar o endereço de <i>e-mail</i> do integrante.</p>
+								<img src="objetos/assets/fig12.jpg" class="img-responsive center-block">
+								<p class="legenda-imagem">
+									Figura 12 – opção “Convidar” no Trello <br>
+									Fonte: adaptado de Trello (2021)
+								</p>
+								<p class="acessivel">
+									Na imagem consta a tela inicial de um quadro no Trello com o fundo azul e três listas criadas: “A fazer”, “Em andamento...” e “Concluído”.
+									A lista “A fazer” contém os oito cartões criados até aqui. Acima das listas de tarefas, está o botão “Convidar” destacado com um contorno vermelho sobre o botão.
+								</p>
+								<p>Com os membros da equipe vinculados ao quadro, passará a ser possível vincular os integrantes a tarefas específicas. Para isso, basta selecionar o cartão da tarefa, escolher a opção <b>Alterar Membros</b> e escolher quais membros serão responsáveis por essa tarefa. Assim, é feita a divisão de tarefas entre a equipe de maneira clara e transparente para todos.</p>
+								<img src="objetos/assets/fig13.jpg" class="img-responsive center-block">
+								<p class="legenda-imagem">
+									Figura 13 – opção “Alterar Membros” para associar tarefa a um componente da equipe <br>
+									Fonte: adaptado de Trello (2021)
+								</p>
+								<p class="acessivel">
+									Na imagem consta a tela inicial de um quadro no Trello com o fundo azul e três listas criadas: “A fazer”, “Em andamento...” e “Concluído”.
+									A lista “A fazer” contém os oito cartões criados até aqui. O primeiro cartão contém seu menu lateral aberto com a opção “Alterar Membros” destacada por um contorno vermelho.
+								</p>
+								<p>Quando as tarefas começarem a ser implementadas, caberá ao integrante responsável por aquela tarefa movê-la para a coluna <b>Em andamento...</b>. Dessa forma, a equipe inteira saberá quais tarefas estão sendo trabalhadas e quem são os responsáveis por elas. </p>
+								<p>Enquanto as tarefas são cumpridas, é comum que a equipe se reúna em pequenas reuniões para revisar e fazer alterações no quadro, planejando os próximos passos estrategicamente, incluindo novas tarefas para necessidades que surjam no decorrer do projeto, balanceamento de carga de trabalho etc. Como o quadro pode, e muitas vezes vai, sofrer essas mudanças, é importante que os integrantes o acessem e o acompanhem com frequência.</p>
+								<p>Assim que uma tarefa for concluída, o cartão pode ser movido para a lista dos concluídos e segue-se esse fluxo até que todas as tarefas estejam concluídas e o projeto finalizado.</p>
+							</div>
+							<!--conteudo 04-->
+							<!-- <a href="#topo" class="no-print botao-subir visible-lg visible-md visible-sm" role="button" aria-hidden="true">SUBIR</a> -->
+							<a href="#topo"><button class="btn-voltar-topo no-print"></button></a>
+							<a href="#conteudo-sprinklers" class="acessivel">Voltar</a>
+							<a href="#conteudo-comunicacao" class="acessivel">avançar</a>
+					</div>
+					<!--/item-->
+
+					<!--item-->
+					<div role="tabpanel" class="tab-pane fade" id="conteudo05">
+							<!--conteudo 05-->
+							<div id="conteudo-comunicacao" class="conteudo-pagina" style="width: 750px;">
+								<h2>Controle de datas</h2>
+								<p>As datas de entrega são uma das funcionalidades mais utilizadas no Trello. Elas são muito úteis para se definir prazos, ou seja, manter a equipe com os prazos em dia. Para configurar uma data em uma tarefa, abra mais uma vez o menu lateral de um cartão e, dessa vez, selecione a opção <b>Editar datas</b>.</p>
+								<img src="objetos/assets/fig14.jpg" class="img-responsive center-block">
+								<p class="legenda-imagem">
+									Figura 14 – Opção “Editar datas” do cartão <br>
+									Fonte: adaptado de Trello (2021)
+								</p>
+								<p class="acessivel">
+									Na imagem consta a tela inicial de um quadro no Trello com o fundo azul e três listas criadas: “A fazer”, “Em andamento...” e “Concluído”.
+									A lista “A fazer” contém os oito cartões criados até aqui. O primeiro cartão contém seu menu lateral aberto com a opção “Editar datas” destacada por um contorno vermelho.
+								</p>
+								<p>Ao selecionar a opção, será revelado um menu lateral para que sejam definidas as datas da tarefa. Nesse menu, podem ser definidas a data de início e a data e hora de entrega. Para isso, digite os valores dentro das caixas de texto ou utilize o calendário para definir o prazo com poucos cliques. Além disso, é possível definir um lembrete. Com esse recurso selecionado, o Trello disparará um alerta aos membros do cartão no tempo definido. Quando você finalizar os ajustes, lembre-se de salvar suas modificações clicando no botão <b>Salvar</b>.</p>
+								<img src="objetos/assets/fig15.jpg" class="img-responsive center-block">
+								<p class="legenda-imagem">
+									Figura 15 – Edição de data de cartão no Trello <br>
+									Fonte: adaptado de Trello (2021)
+								</p>
+								<p class="acessivel">
+									Na imagem consta a tela inicial de um quadro no Trello com o fundo azul e três listas criadas: “A fazer”, “Em andamento...” e “Concluído”.
+									A lista “A fazer” contém os oito cartões criados até aqui. O primeiro cartão contém o menu lateral “Datas” aberto. Dentro desse menu, há um calendário com as datas “28 de setembro de 2021” e “1 de outubro de 2021” selecionadas. Abaixo do calendário, há duas caixas de entradas de dados, “Data de início” e “Data de entrega”, preenchidas com as mesmas datas. Ao lado do campo “Data de entrega” há um outro campo para ser informada a hora. Nesse campo, está a hora “18:00”. 
+									Abaixo, consta o campo “Definir lembrete” com uma caixa de seleção. A opção selecionada é “1 dia antes” e, abaixo, dessa seleção, estão os botões “Salvar” e “Remover”.
+								</p>
+								<p>Agora que você tem todas as tarefas, prioridades e datas definidas, chegou a hora de começar a trabalhar no projeto. Lembre-se de que, conforme as tarefas forem sendo selecionadas para serem implementadas, os quadros devem ser movidos para as listas de <b>Em andamento...</b> e <b>Concluído</b> respectivamente. Em algum momento, você pode se ver tendo que equilibrar várias tarefas ao mesmo tempo. Mas, com uma ferramenta de gestão de projetos, você conseguirá garantir o sucesso em cada tarefa.</p>
+								<div class="caixa-destaque-livre bg-primaria-03 texto-auxiliar-claro-02 icone desafio">
+									<p>Como você observou nesse passo a passo, o Trello é uma ferramenta bastante amigável e que permite a gestão de projetos de modo simples e interativo. Porém, não é preciso limitar o uso da ferramenta a apenas projeto de <i>software</i>. É possível gerenciar o que você quiser. Que tal criar um quadro para gerenciar o seu progresso no curso?</p>
+									<p>Agora que você já sabe como usar o Trello, crie um quadro com o nome do curso e cadastre as unidades curriculares como se fossem tarefas. De acordo com a sua evolução no curso, movimente cada item e acompanhe essa evolução. Para melhorar a organização, adicione também <i>checklists</i> para as atividades de cada unidade curricular.</p>
+									<p>Não pare por aí! O Trello oferece diversos recursos para ajudá-lo na gestão das tarefas. Explore a ferramenta, descubra novas funcionalidades e continue evoluindo!</p>
+								</div>
+							</div>
+							<!--conteudo 05-->
+							<!-- <a href="#topo" class="no-print botao-subir visible-lg visible-md visible-sm" role="button" aria-hidden="true">SUBIR</a> -->
+							<a href="#topo"><button class="btn-voltar-topo no-print"></button></a>
+              <a href="#conteudo-provas" class="acessivel">Voltar</a>
+					</div>
+					<!--/item-->
+			</div>
+				</div>
+			</div>
+        </section>
+			
+		<!-- - - - - - - - - - - - - - - - não alterar abaixo- - - - - - - - - - - - -->
+        <footer class="text-center no-print">
+          <ul class="pagination">
+
+          </ul>
+        </footer>
+
+    </div>
+
+
+    <!--  Em caso de footer personalizado utilizar esse elemento e adicionar a classe customizada
+    <footer>
+    </footer>
+	-->
+<!-- carrega todas as imagens dos icones nesta div
+ caso queira adicionar mais imagens de novos icones do css,
+ ou qualquer imagem que deva ser contabilizada durante a fase
+ de loading, referenciar aqui.
+ -->
+<div class="ico-div-loader">
+	<img src="../template/images/atencao.png">
+    <img src="../template/images/bg-content.jpg">
+    <img src="../template/images/bg-topo.jpg">
+    <img src="../template/images/black-zoom-in-256.png">
+    <img src="../template/images/concluindo.png">
+    <img src="../template/images/curtir.png">
+    <img src="../template/images/desafio.png">
+    <img src="../template/images/dica.png">
+    <img src="../template/images/doc.png">
+    <img src="../template/images/fundamental.png">
+    <img src="../template/images/icon-03.png">
+    <img src="../template/images/importante.png">
+    <img src="../template/images/lightbulb.png">
+    <img src="../template/images/link.png">
+    <img src="../template/images/link_pdf_hover.png">
+    <img src="../template/images/link_pdf_normal.png">
+    <img src="../template/images/logo-senac.png">
+    <img src="../template/images/mark-icon.png">
+    <img src="../template/images/mark-icon02.png">
+    <img src="../template/images/midia.png">
+    <img src="../template/images/monitor.png">
+    <img src="../template/images/nao_curtir.png">
+    <img src="../template/images/pergunta.png">
+    <img src="../template/images/pesquisa.png">
+    <img src="../template/images/play.png">
+    <img src="../template/images/radio_flat.png">
+    <img src="../template/images/refletir.png">
+    <img src="../template/images/saiba_mais.png">
+    <img src="../template/images/senac_loader.png">
+    <img src="../template/images/tanamidia.png">
+    <img src="../template/images/transcricao.png">
+    <img src="../template/images/transcricao_small.png">
+    <img src="../template/images/tv.png">
+    <img src="../template/images/tv_bottom.png">
+    <img src="../template/images/zoom.png">
+    <img src="../template/images/zoom_ie.cur">
+    <img src="../template/images/zoom_ie.png">
+    <!-- adicionar as imagens customizadas aqui abaixo -->
+</div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="../template/js/jquery.min.js"></script>
+<script src="../template/js/bootstrap.min.js"></script>
+<script src="../template/js/jquery.magnific-popup.min.js"></script>
+<script src="../template/js/print.js"></script>
+<script src="../template/js/template.config.js"></script>
+<script src="../template/js/images.loader.js"></script>
+<script src="js/custom.js"></script>
+<noscript>
+  <style media="screen">
+    .over-loader { display: none;}
+    .alertaJS {
+
+    }
+  </style>
+</noscript>
+</body>
+</html>
+<script>
+	//inicializa zoom na imagem
+	$('.zoom-imagem').magnificPopup({
+	 type: 'image',
+  	 mainClass: 'mfp-with-zoom', // this class is for CSS animation below
+ 	 zoom: {
+		enabled: true, // By default it's false, so don't forget to enable it
+
+		duration: 300, // duration of the effect, in milliseconds
+		easing: 'ease-in-out', // CSS transition easing function
+
+		// The "opener" function should return the element from which popup will be zoomed in
+		// and to which popup will be scaled down
+		// By defailt it looks for an image tag:
+		opener: function(openerElement) {
+		  // openerElement is the element on which popup was initialized, in this case its <a> tag
+		  // you don't need to add "opener" option if this code matches your needs, it's defailt one.
+		  return openerElement.is('img') ? openerElement : openerElement.find('img');
+		}
+	  },
+	   image: {
+		  markup: '<div class="mfp-figure">'+
+					'<div class="mfp-close"></div>'+
+					'<div class="mfp-img"></div>'+ // Floated left
+					'<div class="mfp-bottom-bar">'+'<figcaption>'+'<div class="mfp-title" style="text-align:center"></div>'+
+					  '<div class="mfp-counter"></div>'+'</figcaption>'+
+					'</div>'+
+				  '</div>', // Popup HTML markup. `.mfp-img` div will be replaced with img tag, `.mfp-close` by close button
+
+		  cursor: 'mfp-zoom-out-cur', // Class that adds zoom cursor, will be added to body. Set to null to disable zoom out cursor.
+
+		  tError: '<a href="%url%">A imagem</a> não pode ser carregada.' // Error message
+	   }
+	});
+
+	//inicializa popover
+	$(function () {
+	  $('[data-toggle="popover"]').popover()
+	})
+	//inicializa tooltip
+	$(function () {
+	  $('[data-toggle="tooltip"]').tooltip()
+	})
+
+
+	$(".nav-menuh").click(function(){
+        if ($(".menuh-drop").css("display") == "none") {
+			$(".menuh-drop").css("display", "block");
+		}else{
+			$(".menuh-drop").css("display", "none");
+		}
+    })
+	
+	
+
+</script>
+<!-- Script de configuração do HANDTALK -->
+<script src="//senacrs365.sharepoint.com///api.handtalk.me/plugin/latest/handtalk.min.js"></script>
+<script>
+    var ht = new
+    HT({
+
+        token: "bf5b7efb148a829a126a0e0c9fd533bf",
+
+        // Habilita o tradutor de vídeos
+        videoEnabled: true,
+
+        // Habilita embeds do Youtube
+        ytEmbedReplace: true
+
+    });
+</script>
+<!-- --------------------------------------------------------- -->
