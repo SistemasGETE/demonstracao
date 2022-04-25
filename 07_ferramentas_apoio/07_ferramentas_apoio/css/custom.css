@@ -11,6 +11,10 @@ html {
 .icon-gaitinha-01 {
   
 }
+
+.conteudo-pagina {
+  transform: translateY(50px);
+}
 /* INICIO MENU XXXXXXXX */
 .icone-menuh {
   transform: scale(0.5);
